@@ -1,0 +1,28 @@
+
+#include<stdio.h>
+int main()
+{
+int n,i,key,count=0;
+printf("Enter the no. of elements\n");
+scanf("%d",&n);
+int a[n];
+for(int i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+}
+printf("Enter the key to be searched\n");
+scanf("%d",&key);
+for(i=0;i<n;i++)
+{
+if(a[i]==key)
+count++;
+}
+if(count>0)
+{
+printf("Element present\n");
+printf("The frequency of %d is %d ",key,count);
+}
+else
+printf("Element not present");
+return 0;
+}
